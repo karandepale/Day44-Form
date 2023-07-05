@@ -50,8 +50,6 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
-  
-
   if (isValid) {
     textError.innerHTML = "";
     passErr.innerHTML = "";
