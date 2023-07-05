@@ -40,7 +40,17 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
- 
+  if (!passRegex.test(password.value)) {
+    passErr.innerHTML = "Incorrect Password";
+    isValid = false;
+  }
+
+  if (!emailRegex.test(email.value)) {
+    EmailError.innerHTML = "Invalid Email";
+    isValid = false;
+  }
+
+  
 
   if (isValid) {
     textError.innerHTML = "";
