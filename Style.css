@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    max-width:600px;
+    margin:0px auto;
+    padding:1.5em;
+}
+
+.header-container{
+    display:flex;
+    flex-flow:column wrap;
+    align-content:center;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+form{
+    margin-top:40px;
+    border:2px solid black;
+}
+
+div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+label,input,button{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+label{
+    text-align:right;
+    margin-right:2%;
+    width:30%;
+}
+
+input{
+    flex:auto;
+}
+
+button{
+    width:70%;
+    margin:0px auto;
+}
