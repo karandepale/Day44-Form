@@ -50,6 +50,26 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
+  if (!urlRegex.test(url.value)) {
+    urlError.innerHTML = "Incorrect URL";
+    isValid = false;
+  }
+
+  if (!phoneRegex.test(number.value)) {
+    phoneError.innerHTML = "Incorrect Phone";
+    isValid = false;
+  }
+
+  if (search.value.length === 0) {
+    searchError.innerHTML = "Please Search Anything";
+    isValid = false;
+  }
+
+  if (salary.value === "0") {
+    salaryError.innerHTML = "Select Salary Range";
+    isValid = false;
+  }
+
   if (isValid) {
     textError.innerHTML = "";
     passErr.innerHTML = "";
